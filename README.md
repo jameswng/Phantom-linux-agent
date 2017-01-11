@@ -22,7 +22,6 @@ This app utilize mutually verified SSL certificates to ensure security. This req
 4. The X.509 certificate (generated in step 3) identifying the Phantom connector app to
    be provided to the agent progrom on the endpoint.
 
-t remote add origin https://github.com/jameswng/Phantom-linux-agent.git
 Potential focus for future enhancements
   Whitelist for path access validation
   Whitelist for ip access validation
