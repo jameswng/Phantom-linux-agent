@@ -29,4 +29,5 @@ Potential focus for future enhancements
   Hashing/checksuming files
   Listing/killing process, sessions
   Starting/stopping services
-  Rewriting http service to gracefully handle remote agent shutdown and restarts, potentially via the service/systemctl mechanism
+  Rewriting http service to gracefully handle remote agent shutdown and restarts,
+  potentially via the service/systemctl mechanism
