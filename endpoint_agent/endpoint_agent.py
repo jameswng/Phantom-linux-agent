@@ -89,7 +89,7 @@ class Services:
 		data["date"] = str(datetime.datetime.utcnow())
 
 		if not os.path.isfile(handler.content["Path"]):
-			return handler.send_error(400, "File is not a file: {0}".format(handler.content["Path"]))
+			return handler.send_error(400, "Path is not a file: {0}".format(handler.content["Path"]))
 
 		# --- here is where we try and run /bin/cat
 		try:
@@ -109,7 +109,7 @@ class Services:
 		# --- encode the file so not to lose anything in the json translations
 		data["file-content"] = binascii.b2a_base64(data["file-content"])
 		data["file-encoded-length"] = len(data["file-content"])
-		send_response(handler, "time", wrap(data))
+		send_response(handler, "cat", wrap(data))
 
 	# --- /bin/who output, no sudo available, but we will set credentials to the provided user
 	@staticmethod
